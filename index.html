@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<div class="toggle" onclick="myFunction()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div> 
+
+        <div class="logo">
+            <h2>AVSCamp</h2>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#home" onclick="myFunction()">Home</a></li>
+                <li><a href="#about"onclick="myFunction()">About</a></li>
+                <li><a href="#team"onclick="myFunction()">Team</a></li>
+                <li><a href="#services"onclick="myFunction()">Services</a></li>
+                <li><a href="#contact"onclick="myFunction()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="home">
+    <div>
+        <h2>Welcome to AVSCamp</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, natus eius porro repudiandae nobis reiciendis quae et delectus, nisi, aperiam dolorem repellendus quidem saepe earum facilis adipisci voluptate hic autem unde ipsa voluptas! Perferendis dolorem asperiores recusandae tempora doloribus nam?</p>
+    </div>
+    <img src="1.jpg" alt="img of trekk">
+</section>
+
+<section id="about">
+    <div>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, natus eius porro repudiandae nobis reiciendis quae et delectus, nisi, aperiam dolorem repellendus quidem saepe earum facilis adipisci voluptate hic autem unde ipsa voluptas! Perferendis dolorem asperiores recusandae tempora doloribus nam?</p>
+    </div>
+   
+</section>
+
+<section id="team">
+    <div>
+        <h2>Our Camp Experts</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, natus eius porro repudiandae nobis reiciendis quae et delectus, nisi, aperiam dolorem repellendus quidem saepe earum facilis adipisci voluptate hic autem unde ipsa voluptas! Perferendis dolorem asperiores recusandae tempora doloribus nam?</p>
+    </div>
+</section>
+
+<section id="services">
+    <div>
+        <h2>Services we provide </h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, natus eius porro repudiandae nobis reiciendis quae et delectus, nisi, aperiam dolorem repellendus quidem saepe earum facilis adipisci voluptate hic autem unde ipsa voluptas! Perferendis dolorem asperiores recusandae tempora doloribus nam?</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veritatis praesentium asperiores harum incidunt expedita mollitia delectus distinctio facilis laboriosam.</p>
+    </div>
+    <div class="container">
+        <div class="contactinfo">
+            <div class="box">
+                <div class="icon">
+                 <img src="map.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. Voluptate,<br> deserunt.</p>
+                </div>
+            </div>
+
+            <div class="box">
+             <div class="icon">
+           <img src="email (2).png" alt="">
+             </div>
+             <div class="text">
+                 <h3>Email</h3>
+                 <p>adjghioj@gmail.com</p>
+             </div>
+         </div>
+
+         <div class="box">
+             <div class="icon">
+<img src="viber.png" alt="">
+             </div>
+             <div class="text">
+                 <h3>Phone</h3>
+                 <p>8656789056</p>
+             </div>
+         </div>
+
+        </div>
+
+
+        <div class="contactform">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputbox">
+                <input type="text" name="" required>
+                <span>Full Name</span>
+             </div>
+             <div class="inputbox">
+                 <input type="text" name="" required>
+                 <span>Email</span>
+              </div>
+              <div class="inputbox">
+                 <textarea required></textarea>
+                 <span>Type your Message</span>
+              </div>
+              <div class="inputbox"></div>
+              <input type="button" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+</section>
+   
+<script>
+    function myFunction(){
+var navbar=document.getElementById("nav");
+navbar.classList.toggle("show");
+    }
+
+</script>
+</body>
+</html>

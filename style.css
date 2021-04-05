@@ -1,0 +1,266 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+header{
+    display: inline-block;
+    width: 100%;
+    padding: 25px 80px;
+    background-color: black;
+    position: relative;
+    color: white;
+}
+.logo{
+    float: left;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 25px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+nav ul li a:hover{
+    background-color: #205aff;
+}
+.toggle{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+.toggle span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    float: left;
+    margin-bottom: 8px;
+}
+section{
+    
+    
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 100px 100px;
+}
+section:nth-child(odd){
+    background-color: black;
+    
+    color: white;
+}
+section h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+section img{
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+
+
+@media  (max-width:991px){
+
+    .toggle{
+        display:block;
+        right: 20px;
+        top: 35px;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid white;
+        padding-top: 20px;
+        margin-top: 30px;
+
+    }
+    nav ul li{
+        padding: 15px 0;
+        width: 100%;
+    }
+    nav.show{
+        display: block;
+    }
+    .logo{
+        font-size: 18px;
+    }
+    section{
+        padding: 100px 50px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    section img{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #205aff;
+    font-size: 20px;
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background:white;
+    color: black;
+}
+.contactform h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #205aff;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color:#205aff;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.btn{
+    width: 100px;
+    background-color: #205aff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+ .contact .icon img{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media(max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform{
+        width: 100%;
+    }
+
+}
